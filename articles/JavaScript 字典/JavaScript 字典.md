@@ -1,4 +1,5 @@
 #常见
+
 . ：可能通俗的理解为从属关系。比如：你.身体.胳膊.手.手指头。这里的.就表示了一系列的从属关系。
 
 [] ：同. 的使用方法 你['身体']['胳膊']['手']
@@ -26,6 +27,7 @@ tagName ：标记名、标签名。象div,ul,li,p,a这些都是HTML元素的标�
 className ：类名。比如：<div class=’c1’></div> 这个c1就叫className，在js里，就通过这个属性来获的一个HTML元素的类名。
 
 #变量类型部分 
+
 null ：空值,是一个空指针，一般表示一个变量定义了，但是没有值（值为空） 
 
 undefined ：未定义的或定义了而未赋值的 
@@ -49,6 +51,7 @@ Array ：数组，最常用的JS数据对象，可以存放多个值，一般用
 typeof ：用来计算变量类型的运算符，比如alert(typeof “abcd”)出输出string,表示这是个字符串类型、
 
 #基本语法部分 
+
 object ：对象，通俗的讲把一个东东当成一个整体来看待，可称做一个对象 
 
 switch ：JS的基础语法之一，和case配合使用，表示判断的那个条件（请详见示例的解释） 
@@ -68,6 +71,7 @@ return ：中断程序的执行并返回。
 while(bool) ：循环语法之一，和之相对应的有do{ }while 
 
 #控制CSS的方法 
+
 currentStyle ：当前的样式，ie专有用法 
 
 getComputedStyle ：获得计算出的样式，和样式有关的js方法，w3c标准用法 
@@ -114,6 +118,7 @@ lastIndexOf() ：取得一个字str这个字符串在这个字符串中的位置
 str.replace(regexp/substr,replacement) ：把str这个字符串中的第一个参数部分的内容，用第二个参数的内容替换；第一个参数可以是一个正则，也可以是一个字符串。字符串替换方法，详见正则教材
 
 #DOM方法 
+
 createElement ：创建元素的方法，比如：var o=document.createElement(‘div’);创建一个DIV元素。 
 
 appendChild ：追加子元素的方法，比如document.body.appentChild(o);(承上句) 
@@ -147,6 +152,7 @@ removeChild() ：删除子节点。
 document.createDocumentFragment() ：创建文档碎片。
 
 #时间和数学常用方法 
+
 Math.ceil() ：把带小数的数往上取，比如1.1取成2，0.2取成1,-1.2取成-1（注意这个是负数）。 
 
 Math.floor() ：常用的数学方法，把带小数的数往下取，和上一个正相反 
@@ -158,6 +164,7 @@ Math.round() ：四舍五入
 Math.abs() ：取绝对值
 
 #其它常用全局方法 
+
 parseInt() ：截取字符串前边的数字，如果一个字符串前部不是数字，则返回NaN。比如parseInt(‘12px’),则window.setTimeout(fn,interval):定时器，在指定的时间（由第二个参数interval指定）之后运行某个方法（就是第一个参数fn）一次，然后停下来 
 
 window.clearTimeout(Tid) ：根据定时器id，清除一个定时器 
@@ -165,6 +172,7 @@ window.clearTimeout(Tid) ：根据定时器id，清除一个定时器
 window.setInterval(fn,interval) ：也是定时器，在指定的时间（由第二个参数interval指定）之后运行某个方法（就是第一个参数fn）n次，不停下来。此方法有返回值，是一个数字，表示的是fn在定时器队列里的序号。
 
 #与盒子模型相关的属性与方法
+
 clientWidth ：是对象可见的宽度，包括width和padding的宽，但不包括滚动条和边线。 
 
 offsetWidth ：是对象的可见宽度，包括边框、滚动条、padding、内容的宽度，会随窗口的显示大小改变。（不包括margin） 
@@ -188,6 +196,7 @@ scrollWidth ：是对象的实际内容（比如文字占的实际宽）的宽�
 document.documentElement.clientWidth||document.body.clientWidth ：获取浏览器可见区域的宽。
 
 #事件相关的属性与方法
+
 event ：事件，在IE浏览器中是个全局属性，表示浏览器的事件对象。 
 
 target ：目标，指的是在标准浏览器中触发事件的那个源头，就是事件传翻的开始的那个元素。 
@@ -215,6 +224,7 @@ preventDefault ：标准浏览器中阻止HTML元素默认行为的的方法。
 event.returnValue=false：IE浏览器中阻止元素默认行为的属性。
 
 #错误和异常处理单词
+
 error ：错误。Error在js中是一个类 
 
 console ：控制台 
